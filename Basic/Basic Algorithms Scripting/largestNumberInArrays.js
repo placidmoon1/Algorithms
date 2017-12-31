@@ -1,13 +1,13 @@
-/* FreeCodeCamp Basic Algorithms Scripting Q6: Return Largest Number in Arrays
+/* FreeCodeCamp Basic Algorithms Scripting Q6 <Return Largest Number in Arrays>
 
-Return an array consisting of the largest number from each provided sub-array. For simplicity, the provided array will contain exactly 4 sub-arrays.
-
+Return an array consisting of the largest number from each provided sub-array. 
+For simplicity, the provided array will contain exactly 4 sub-arrays.
 Remember, you can iterate through an array with a simple for loop, and access each member with array syntax arr[i].
-
 */
 
+/* Iterative version*/
 function largestOfFour(arr) {
-  largestNumberOfEach = [];
+  var largestNumberOfEach = [];
   for (var i = 0; i < arr.length; i++) {
     var curLargeNum = 0;
     for (var j = 0; j <arr.length; j++) {
