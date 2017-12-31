@@ -21,7 +21,12 @@ function repeatStringNumTimesRecur(str, num) {
   if (num <= 0) {
     return "";
   }
-  return str += repeatStringNumTimes(str, num - 1);
+  return str + repeatStringNumTimes(str, num - 1);
+}
+
+/* One-line Approach */
+function repeatStringNumTimes(str, num) {
+  return num > 0 ? str.repeat(num) : "";
 }
 
 /* Test Cases; all test cases should return "abcabcabc"*/
